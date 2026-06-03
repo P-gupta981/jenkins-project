@@ -1,12 +1,8 @@
-pipeline {
+
+       pipeline {
     agent any
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/python-jenkins-project.git'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
